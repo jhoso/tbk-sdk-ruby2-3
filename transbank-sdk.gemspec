@@ -4,10 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "transbank/sdk/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "transbank-sdk"
+  spec.name          = "tbk-sdk"
   spec.version       = Transbank::Sdk::VERSION
   spec.authors       = ["Transbank Developers"]
-  spec.email         = ["transbankdevelopers@continuum.cl"]
+  spec.email         = ["transbankdevelopers@continuum.cl", "jacevedo@acid.cl"]
 
   spec.summary       = %q{Transbank SDK for Ruby}
   spec.homepage      = "https://www.transbankdevelopers.cl/"
@@ -22,14 +22,14 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "json", "~> 2.0"
-  spec.add_development_dependency "bundler", "~> 2.1"
-  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_dependency "json", "~> 1.7"
+  spec.add_development_dependency "bundler", "~> 1.17.3"
+  spec.add_development_dependency "rake", "~> 12.1.0"
   spec.add_development_dependency "minitest", "~> 5.0"
-  spec.add_development_dependency "rubocop", "~> 0.59"
-  spec.add_development_dependency "pry", "~> 0.11"
+  spec.add_development_dependency "rubocop", "~> 0.52.1"
+  spec.add_development_dependency "pry", "~> 0.10.4"
   spec.add_development_dependency 'minitest-reporters', '~> 1.1'
-  spec.add_development_dependency 'byebug', "~> 11.1"
-  spec.add_development_dependency 'pry-byebug', "~> 3.9"
-  spec.add_development_dependency 'webmock', "~> 3.12"
+  spec.add_development_dependency 'byebug', "~> 9.0.6"
+  spec.add_development_dependency 'pry-byebug', "~> 3.4.1"
+  spec.add_development_dependency 'webmock', "~> 2.1.0"
 end

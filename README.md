@@ -1,10 +1,10 @@
 # Transbank SDK Ruby
 
-SDK Oficial de Transbank
+SDK Oficial de Transbank downgraded para maconline
 
 ## Requisitos:
 
-- Ruby 2.4+
+- Ruby 2.3
 
 # Instalación
 
@@ -15,7 +15,7 @@ gem install transbank-sdk
 
 o añadirlo a tu `Gemfile`
 ```ruby
-gem 'transbank-sdk'
+gem 'tbk-sdk', '= 1.5.0.pre.ruby2.3'
 ```
 y luego ejecutar
 ```bash
